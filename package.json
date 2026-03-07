@@ -1,0 +1,36 @@
+{
+  "name": "openclaw-feishu-user-kb",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OpenClaw Feishu knowledge base plugin using user_access_token.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daizzzzzzzzzzzz/openclaw-feishu-user-kb.git"
+  },
+  "keywords": [
+    "openclaw",
+    "feishu",
+    "lark",
+    "wiki",
+    "knowledge-base",
+    "docx",
+    "bitable",
+    "oauth"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node.exe --test || node --test"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.59.0",
+    "@sinclair/typebox": "0.34.48"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ]
+  }
+}

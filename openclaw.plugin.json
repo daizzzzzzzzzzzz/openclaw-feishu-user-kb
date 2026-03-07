@@ -1,0 +1,15 @@
+{
+  "id": "feishu-user-kb",
+  "name": "Feishu User KB",
+  "description": "Feishu knowledge base tools backed by user_access_token.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "gatewayBaseUrl": {
+        "type": "string",
+        "default": "http://127.0.0.1:18789"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "defaultAccount": "main",
+      "accounts": {
+        "main": {
+          "appId": "cli_xxxxxxxxxxxxxxxxx",
+          "appSecret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "tools": {
+            "doc": false,
+            "wiki": false
+          }
+        },
+        "default": {
+          "tools": {
+            "doc": false,
+            "wiki": false
+          }
+        }
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "feishu",
+      "feishu-user-kb"
+    ],
+    "entries": {
+      "feishu": {
+        "enabled": true
+      },
+      "feishu-user-kb": {
+        "enabled": true,
+        "config": {
+          "gatewayBaseUrl": "http://127.0.0.1:18789"
+        }
+      }
+    }
+  }
+}
+
