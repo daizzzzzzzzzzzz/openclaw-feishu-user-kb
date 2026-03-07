@@ -1,4 +1,4 @@
-# openclaw-feishu-user-kb
+﻿# openclaw-feishu-user-kb
 
 `openclaw-feishu-user-kb` 是一个给 OpenClaw 使用的飞书知识库插件。它的核心目标不是替代飞书官方机器人通道，而是补上一个关键能力缺口: 让 OpenClaw 在飞书消息上下文里，使用 `user_access_token` 而不是 `tenant_access_token` 去操作知识库、云文档和多维表格。
 
