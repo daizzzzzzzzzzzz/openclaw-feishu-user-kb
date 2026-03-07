@@ -137,12 +137,6 @@ cd openclaw-feishu-user-kb
 npm install
 ```
 
-说明:
-
-- 这里已经改成当前仓库的真实地址
-- 如果别人是从你这个仓库直接安装，这段命令可以原样使用
-- 如果别人是 fork 到自己的账号后再安装，需要把地址换成自己的 fork URL
-
 ### 方式二: 安装到 OpenClaw 扩展目录
 
 推荐把仓库放到 `~/.openclaw/extensions/openclaw-feishu-user-kb`。
@@ -162,11 +156,6 @@ New-Item -ItemType SymbolicLink `
 ```
 
 说明:
-
-- `~/.openclaw/extensions/openclaw-feishu-user-kb` 和 `$env:USERPROFILE\\.openclaw\\extensions\\openclaw-feishu-user-kb` 是通用的 OpenClaw 扩展目录写法
-- 我之前写的 `D:\\AI\\openclaw-feishu-user-kb` 是当前这台机器上的实际开发目录，只适用于这台电脑，不应该原样保留在公开文档里
-- 公开 README 里，软链接目标应该写成你自己的实际本地路径，例如 `D:\\Projects\\openclaw-feishu-user-kb` 或 `C:\\work\\openclaw-feishu-user-kb`
-
 安装完成后，重启 OpenClaw gateway 或执行你当前环境中的插件重载命令。
 
 ## OpenClaw 配置示例
@@ -480,48 +469,6 @@ npm test
 
 这是刻意收紧的边界。当前仓库只实现创建、读取、更新、移动、迁移，不提供删除类动作，避免误删知识资产。
 
-## 发布前需要改的地方
-
-当前仓库的 `package.json` 已经写入真实 `repository.url`:
-
-```text
-git+https://github.com/daizzzzzzzzzzzz/openclaw-feishu-user-kb.git
-```
-
-只有在下面两种情况时，你才需要再改:
-
-- 你把仓库改名了
-- 你把这个项目 fork 到其他 GitHub 账号名下，准备以 fork 作为主仓库继续维护
-
-获取方式:
-
-1. 先在 GitHub 上创建一个新仓库，例如 `openclaw-feishu-user-kb`
-2. 打开这个仓库首页
-3. 复制浏览器地址栏里的页面 URL，例如:
-
-```text
-https://github.com/daizzzzzzzzzzzz/openclaw-feishu-user-kb
-```
-
-4. 再把它转换成 `package.json` 里常用的 git URL 格式:
-
-```text
-git+https://github.com/daizzzzzzzzzzzz/openclaw-feishu-user-kb.git
-```
-
-例如，如果你的 GitHub 用户名是 `zhangsan`，仓库名是 `openclaw-feishu-user-kb`，那么:
-
-- 仓库页面 URL:
-
-```text
-https://github.com/zhangsan/openclaw-feishu-user-kb
-```
-
-- `package.json` 中的 `repository.url`:
-
-```text
-git+https://github.com/zhangsan/openclaw-feishu-user-kb.git
-```
 
 ## License
 
