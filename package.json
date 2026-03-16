@@ -21,6 +21,14 @@
   "engines": {
     "node": ">=20"
   },
+  "files": [
+    "index.js",
+    "openclaw.plugin.json",
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "node.exe --test || node --test"
   },
